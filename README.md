@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./assets/pf-logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./Assets/pf-logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h1><b>Hello visitor, welcome to my Project</b></h1>
@@ -12,7 +12,7 @@
 <div align="center">
   
   <br/>
-<h1 align="center">Pokemon Stop</h1>
+<h1 align="center">Pokemon Capstone Project</h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -40,10 +40,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Pokemon stop] <a name="about-project"></a>
+# 📖 [Pokemon Capsone Project] <a name="about-project"></a>
 
 
-**Leaderboard** is a project where You can look for your favourite pokemons and inreract with them, I used an API to get Pokemon data.
+**Pokemon Capsone Project** is a project where You can look for your favourite pokemons and inreract with them, I used an API to get Pokemon data.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -64,13 +64,13 @@
 
 
 - **Use ES6 modules and webpack**
-- **Create it dynamically** 
+- **Getting Data from Pokemon API** 
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://otmaneechchafyky.github.io/capstone-project-javascript/dist/)
+- [Live Demo Link](https://otmaneechchafyky.github.io/javascript-capstone//dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,13 +97,13 @@ Example commands:
 
 ```sh
   cd folder-name
-  git https://github.com/otmaneechchafyky/capstone-project-javascript.git
+  git clone https://github.com/otmaneechchafyky/javascript-capstone.git
 ```
 
 ### Install
 
 ```sh
-  cd leaderboard
+  cd folder-name
 
   npm install or npm i
 ```
@@ -118,13 +118,13 @@ Example commands:
 To run the project, execute the following command:
 
 ```sh
-  npm start
+  npm run dev
 
 ```
 
 ### Run tests
 
-- n/a
+- npm test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,12 +142,12 @@ To run the project, execute the following command:
 - Twitter: [@EchchafykyO](https://twitter.com/EchchafykyO)
 
 
-👤 **EmmanuMusangamfura Emmanuel**
+👤 **Emmanuel Musangamfura**
 
 
-- GitHub: [@Otmaneechchafyky](https://github.com/musangamfure)
-- LinkedIn: [@Otmaneechchafyky](https://www.linkedin.com/in/otmane-echchafyky-125801248/)
-- Twitter: [@EchchafykyO](https://twitter.com/EchchafykyO)
+- GitHub: [@musangamfure](https://github.com/musangamfure)
+- LinkedIn: [@musangamfurae](https://www.linkedin.com/in/musangamfurae/)
+- Twitter: [@musangamfure](https://twitter.com/musangamfure)
 
 
 <!-- FUTURE FEATURES -->
@@ -169,7 +169,7 @@ Future changes:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/otmaneechchafyky/capstone-project-javascript/issues).
+Feel free to check the [issues page](https://github.com/otmaneechchafyky/javascript-capstone/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
