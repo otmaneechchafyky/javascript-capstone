@@ -24,6 +24,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  -  [🚀 Description video](#live-video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -71,6 +72,14 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://otmaneechchafyky.github.io/javascript-capstone//dist/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE VIDEO -->
+
+## 🚀 Live Video <a name="live-video"></a>
+
+- [Live Demo Link](https://drive.google.com/drive/u/0/folders/1BpKuOL4fWhBqnMqneu3angPcCEqpn015)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
