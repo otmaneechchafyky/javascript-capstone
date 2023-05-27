@@ -4,7 +4,7 @@
   <img src="./Assets/pf-logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h1><b>Hello visitor, welcome to my Project</b></h1>
+  <h1><b>Hello visitor, welcome to our Project</b></h1>
 
 </div>
 
