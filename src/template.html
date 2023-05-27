@@ -14,8 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <title>Pokemon Capstone</title>
-  <script defer src="bundle.js"></script></head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
   <body>
     <header>
       <a class="" href="#">
@@ -24,10 +24,10 @@
       <nav>
         <ul class="nav-items">
           <li class="nav-item active">
-            <a class="poke-count" href="#">Pokemons</a>
+            <a class="poke-count" href="#">Pokes</a>
           </li>
-          <li class="nav-item"><a href="#">Categories</a></li>
-          <li class="nav-item"><a href="#">Contact us</a></li>
+          <li class="nav-item"><a href="#">Popular</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -59,7 +59,7 @@
           name="comment"
           id="comment-textarea"
           class="comment-textarea"
-          placeholder="Your insights"
+          placeholder="Your Comment"
           required
         ></textarea>
         <button type="submit" class="add-button">comment</button>
@@ -68,7 +68,7 @@
     <div id="shadow"></div>
 
     <footer>
-      <p class="f-para">Created by Otmane & Emmanuel under CC license</p>
+      <p class="f-para">Created by Odalton under CC license</p>
     </footer>
   </body>
 </html>

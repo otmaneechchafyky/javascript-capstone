@@ -1,4 +1,4 @@
-import './style.css';
+import './style/main.css';
 
 import FetchMon from './modules/pokefetchfunction.js';
 import GetPoke from './modules/getpokemon.js';

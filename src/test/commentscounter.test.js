@@ -1,26 +1,26 @@
 import Comments from '../modules/comments.js';
 
-test('count how many comments', () => {
+test('comments counter', () => {
   const comments = [
     {
-      Comment: 'first test',
-      username: 'otmane',
-      creation_date: '2023-05-26',
+      Comment: 'Test',
+      username: 'Eric',
+      creation_date: '2022-05-20',
     },
     {
-      username: 'emmanuel',
-      Comment: 'second test',
-      creation_date: '2023-05-26',
+      username: 'Gideon',
+      Comment: 'Work',
+      creation_date: '2022-05-20',
     },
     {
-      Comment: 'third test',
-      creation_date: '2023-05-26',
-      username: 'amine',
+      Comment: 'Test',
+      creation_date: '2022-05-20',
+      username: 'reviewer',
     },
     {
-      Comment: 'good',
-      creation_date: '2023-05-26',
-      username: 'luck',
+      Comment: 'Happy',
+      creation_date: '2022-05-20',
+      username: 'Codind',
     },
   ];
   const count = Comments.countFn(comments);

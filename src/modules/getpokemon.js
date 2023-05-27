@@ -27,8 +27,7 @@ export default class GetPoke {
     const pokes = document.querySelectorAll('.poke-card');
     const count = this.counterPoke(pokes);
     const counters = document.querySelector('.poke-count');
-    counters.textContent = `Pokemons (${count})`;
-    counters.classList.add('adding');
+    counters.textContent = `Pokes(${count})`;
   }
 
   static counterPoke = (arr) => {
@@ -63,67 +62,47 @@ export default class GetPoke {
 
   static createModal = () => {
     const commentButtons = document.querySelectorAll('.comment-button');
-
-    const openModal = (e) => {
-      this.createComment(e.target.id);
-      popUp.classList.add('active');
-      shadow.classList.add('active');
-
-      const { parentElement } = e.target;
-      if (parentElement.id === e.target.id) {
-        const firstChild = parentElement.firstElementChild;
-        const secondChild = parentElement.firstElementChild.nextElementSibling;
-        const formId = firstChild.nextElementSibling.firstElementChild.innerHTML;
-        const popUpId = firstChild.firstElementChild.alt;
-
-        form.setAttribute('id', formId);
-        popUp.setAttribute('id', popUpId);
-        popTop.innerHTML = `
-          <img class="top-img" src="${firstChild.firstElementChild.src}">
-        `;
-        popTitle.innerHTML = `${secondChild.firstElementChild.innerHTML}`;
-        desc1.innerHTML = `Power: ${e.target.previousElementSibling.id}`;
-        desc2.innerHTML = `Collected: ${secondChild.children[1].id}`;
-      }
-    };
-
-    const closeModal = () => {
-      popUp.classList.remove('active');
-      shadow.classList.remove('active');
-    };
-
     commentButtons.forEach((button) => {
-      button.addEventListener('click', openModal);
-    });
-
-    const closeButtons = document.querySelectorAll('.close-pop');
-    closeButtons.forEach((closeButton) => {
-      closeButton.addEventListener('click', closeModal);
+      button.addEventListener('click', (e) => {
+        this.createComment(e.target.id);
+        popUp.classList.add('active');
+        shadow.classList.add('active');
+        if (e.target.parentElement.id === e.target.id) {
+          form.setAttribute('id', `${e.target.parentElement.firstElementChild.nextElementSibling.firstElementChild.innerHTML}`);
+          popUp.setAttribute('id', `${e.target.parentElement.firstElementChild.firstElementChild.alt}`);
+          popTop.innerHTML = `
+        <img class="top-img" src="${e.target.parentElement.firstElementChild.firstElementChild.src}">
+        `;
+          popTitle.innerHTML = `${e.target.parentElement.firstElementChild.nextElementSibling.firstElementChild.innerHTML}`;
+          desc1.innerHTML = `Strength: ${e.target.previousElementSibling.id}`;
+          desc2.innerHTML = `Collected: ${e.target.parentElement.firstElementChild.nextElementSibling.children[1].id}`;
+        }
+      });
+      const closeButtons = document.querySelector('.close-pop');
+      closeButtons.addEventListener('click', () => {
+        popUp.classList.remove('active');
+        shadow.classList.remove('active');
+      });
     });
   }
 
   static commentFn = () => {
     const inputName = document.getElementById('comment-input');
     const inputTextarea = document.getElementById('comment-textarea');
-
-    form.addEventListener('submit', async (e) => {
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
-
       if (e.target.tagName === 'FORM') {
-        try {
-          const d = await Comments.postComment(e.target.id, inputName.value, inputTextarea.value);
-
-          if (d === 'Created') {
-            const commentsDiv = document.querySelector('.comments-list');
-            commentsDiv.innerHTML = '';
-            dispComment.innerHTML = '';
-            this.createComment(e.target.id);
-            inputName.value = '';
-            inputTextarea.value = '';
-          }
-        } catch (error) {
-          inputName.classList.add('.nothing');
-        }
+        Comments.postComment(e.target.id, inputName.value, inputTextarea.value)
+          .then((data) => {
+            if (data === 'Created') {
+              const commentsDiv = document.querySelector('.comments-list');
+              commentsDiv.innerHTML = '';
+              dispComment.innerHTML = '';
+              this.createComment(e.target.id);
+              inputName.value = '';
+              inputTextarea.value = '';
+            }
+          });
       }
     });
   }

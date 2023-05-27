@@ -1,6 +1,6 @@
 export default class Comments {
   static url =
-    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Wi60sKUpCmISIO1yYIJP/comments'
+    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/u3kMo3USGikpAtnmpKBQ/comments'
 
   static postComment = async (id, username, comment) => {
     const res = await fetch(this.url, {
