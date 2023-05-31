@@ -54,7 +54,7 @@ export default class GetPoke {
       data.forEach((item) => {
         const likeSpan = document.getElementById(`${item.item_id}`);
         if (likeSpan) {
-          likeSpan.innerHTML = `${item.likes} Likes`;
+          likeSpan.innerHTML = `${item.likes}`;
         }
       });
     });
